@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-12">
+
+    <!-- Filtro -->
+    <div class="row mb-2">
+      <div class="col-12">
+        <app-filter (filter)="filter($event)"></app-filter>
+      </div>
+    </div>
+
+    <!-- Nombres -->
+    <div class="row">
+      <div class="col-12">
+        <ul>
+          <li *ngFor="let name of namesFiltered">{{name}}</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>

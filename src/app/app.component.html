@@ -1,0 +1,21 @@
+<div class="container bg-white mt-3 border rounded p-3">
+
+  <!-- Menu -->
+  <div class="row mb-2">
+    <div class="col-12">
+      <nav>
+        <ul>
+          <li>
+            <a [routerLink]="['/people-list']">Personas</a>
+          </li>
+          <li>
+            <a [routerLink]="['/animals-list']">Animales</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Rutas -->
+  <router-outlet></router-outlet>
+</div>
